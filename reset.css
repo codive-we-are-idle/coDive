@@ -1,294 +1,129 @@
-/* CSS Reset - 모든 기본 스타일 초기화 */
+/* ===== Modern CSS Reset ===== */
 
-/* 1. 기본 margin, padding, border 제거 */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
-
-/* 2. HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-/* 3. 기본 스타일 초기화 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* 4. 리스트 스타일 제거 */
-ol,
-ul {
-  list-style: none;
-}
-
-/* 5. 인용 스타일 제거 */
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-/* 6. 테이블 스타일 초기화 */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* 7. 링크 스타일 초기화 */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:focus,
-a:hover,
-a:visited,
-a:link,
-a:active {
-  text-decoration: none;
-}
-
-/* 8. 폼 요소 초기화 */
-input,
-textarea,
-select,
-button {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-  background: transparent;
-  border: none;
-  outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-/* 9. 버튼 초기화 */
-button {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  outline: none;
-}
-
-/* 10. 이미지 초기화 */
-img {
-  max-width: 100%;
-  height: auto;
-  border: none;
-  outline: none;
-}
-
-/* 11. 기본 글꼴 초기화 */
-body {
-  line-height: 1;
-  font-family: inherit;
-  background: transparent;
-  color: inherit;
-}
-
-/* 12. 강조 태그 초기화 */
-em,
-i {
-  font-style: normal;
-}
-
-strong,
-b {
-  font-weight: normal;
-}
-
-/* 13. HTML5 input 타입 초기화 */
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-decoration,
-input[type='search']::-webkit-search-results-button,
-input[type='search']::-webkit-search-results-decoration {
-  -webkit-appearance: none;
-}
-
-/* 14. 선택 영역 초기화 */
-::selection {
-  background: transparent;
-}
-
-::-moz-selection {
-  background: transparent;
-}
-
-/* 15. 스크롤바 초기화 (Webkit 기반 브라우저) */
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-/* 16. 모든 요소의 기본 속성 초기화 */
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* 17. 텍스트 선택은 허용 */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-div,
-input,
-textarea,
-select {
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
-}
-
-/* 18. 포커스 아웃라인 제거 */
-*:focus {
-  outline: none;
-}
-
-/* 19. 애니메이션 초기화 */
+/* 1. 박스 사이징 초기화 */
 *,
 *::before,
 *::after {
-  animation-duration: 0s !important;
-  animation-delay: 0s !important;
-  transition-duration: 0s !important;
-  transition-delay: 0s !important;
+  box-sizing: border-box;
 }
 
-/* 20. 최종 초기화 */
-html {
-  font-size: 16px;
-  line-height: 1;
-  color: #000;
-  background: #fff;
+/* 2. 기본 여백 제거 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
+/* 3. 기본 글꼴 상속 */
 body {
-  font-family: Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1;
-  color: #000;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
   background: #fff;
+  color: #000;
 }
+
+/* 4. 이미지, 비디오 등 미디어 요소 */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5. form 요소 기본 스타일 제거 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* 6. 링크 초기화 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 7. 리스트 제거 */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 8. 버튼과 커서 */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* 9. table 리셋 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* 10. strong, em 등의 스타일 상속 */
+strong,
+b {
+  font-weight: bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+/* 11. 코드 요소 리셋 */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* 12. placeholder 색상 */
+::placeholder {
+  color: inherit;
+  opacity: 0.6;
+}
+
+/* 13. selection 색상 */
+::selection {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* 14. 스크롤바 제거 (선택사항) */
+/* ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+} */
+
+/* 15. accessibility: focus 스타일은 제거하지 않음! */
