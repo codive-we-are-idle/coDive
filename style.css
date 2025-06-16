@@ -81,25 +81,24 @@ header .nav .auth {
   }
 }
 
-.carousel {
-  padding-block: 20px;
-}
-
-.carousel .swiper {
-  width: 1024px;
+.swiper {
+  max-width: 1024px;
   height: 400px;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
-.swiper-slide {
-  width: 100%;
-  height: 100%;
+.swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .swiper-slide img {
   width: 100%;
-  height: 100%;
+
   object-fit: cover; /* fill 대신 cover 사용 */
-  display: block;
 }
 
 footer {
