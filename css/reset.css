@@ -117,7 +117,8 @@ samp {
 
 /* 13. selection 색상 */
 ::selection {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(87, 195, 104, 0.83);
+  color: rgb(255, 255, 255);
 }
 
 /* 14. 스크롤바 제거 (선택사항) */
