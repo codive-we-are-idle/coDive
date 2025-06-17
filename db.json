@@ -1,1 +1,25 @@
-{}
+{
+  "free": [
+    { "id": 1, "title": "코딩 테스트 너무 어려워요", "createAt": "25.06.12", "category": "코딩 테스트" },
+    { "id": 2, "title": "나는 프론트엔드 백엔드 서버 디비 ai 개발자야", "createAt": "25.06.13", "category": "잡담" },
+    {
+      "id": 3,
+      "title": "나 어제 메가커피에서 네이버 사장님 봄 검소하시다",
+      "createAt": "25.06.14",
+      "category": "잡담"
+    },
+    { "id": 4, "title": "이건 어떻게 해요?", "createAt": "25.06.15", "category": "질문" },
+    { "id": 5, "title": "내일 면접 있는데 모의 면접 해주실분?", "createAt": "25.06.16", "category": "취업" },
+    { "id": 6, "title": "z-index에 대한 고찰", "createAt": "25.06.17", "category": "정보" },
+    { "id": 6, "title": "실행 컨텍스트 란?", "createAt": "25.06.17", "category": "정보" },
+    { "id": 6, "title": "open ai 한국지사 구인 구직", "createAt": "25.06.17", "category": "취업" }
+  ],
+  "recruit": [
+    { "id": 1, "title": "그리드 알고리즘 스터디 하실 분?", "createAt": "25.06.12", "category": "그리드" },
+    { "id": 2, "title": "알고리즘 스터티 구합니다. 프로그래머스 렙 2이상", "createAt": "25.06.13", "category": "코테" },
+    { "id": 3, "title": "리트코드 잔디 매일매일 깍으실분?", "createAt": "25.06.14", "category": "데일리" },
+    { "id": 4, "title": "알고리즘 기초 지식 스터디", "createAt": "25.06.15", "category": "초급" },
+    { "id": 5, "title": "알고리즘 대회 준비", "createAt": "25.06.16", "category": "고급" },
+    { "id": 6, "title": "DFS, DPS 깊게 스터디 하실 분 오세요", "createAt": "25.06.17", "category": "개념" }
+  ]
+}

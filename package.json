@@ -4,7 +4,7 @@
   },
   "scripts": {
     "api": "json-server --watch db.json --port 3001",
-    "dev": "live-server --port=8080"
+    "dev": "live-server --host=localhost --port=8080 --no-browser"
   },
   "devDependencies": {
     "live-server": "^1.2.2"

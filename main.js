@@ -1,6 +1,13 @@
-import { initCarousel } from './lib/carousel.js';
+import { posts } from './posts/index.js';
+import { rank } from './rank/index.js';
+import { carousel } from './carousel/index.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const carousel = initCarousel();
-  console.log('Carousel initialized:', carousel);
+  // 케러셀
+  carousel.init();
+  // posts
+  posts.init();
+
+  // rank
+  rank.init();
 });
