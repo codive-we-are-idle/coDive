@@ -75,7 +75,7 @@ header .nav .nav-menu {
 }
 
 header .nav .auth {
-  display: flex;
+  display: none;
   justify-content: end;
   gap: 10px;
   width: 130px;
@@ -93,6 +93,35 @@ header .nav .auth {
     &:hover {
       color: var(--border-primary);
     }
+  }
+
+  &.show {
+    display: flex;
+  }
+}
+
+.nav .auth-logged {
+  display: none;
+  width: 130px;
+  button {
+    color: var(--text);
+    font-size: 16px;
+    cursor: pointer;
+
+    /*  테블릿  */
+    @media (max-width: 1024px) and (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: var(--border-primary);
+    }
+  }
+
+  &.show {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
   }
 }
 
@@ -117,6 +146,10 @@ header .nav .auth {
 
 main {
   margin-bottom: 100px;
+}
+
+.rank {
+  margin-bottom: 50px;
 }
 
 .rank .title {
@@ -233,7 +266,7 @@ main {
   position: absolute;
   display: flex;
   gap: 10px;
-  top: -10px;
+  top: -30px;
   left: 25px;
 
   .tab {
