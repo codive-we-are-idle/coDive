@@ -2,10 +2,11 @@ export const elements = {
   loginBtn: document.querySelector('#login-button'),
   joinBtn: document.querySelector('#join-button'),
   githubBtn: document.querySelector('#github-btn'),
-  closeBtn: document.querySelector('#close-btn'),
+  modalCloseBtn: document.querySelector('#close-btn'),
   loginModal: document.querySelector('#login-modal'),
   authSection: document.querySelector('.auth'),
   loggedSection: document.querySelector('.auth-logged'),
+  logoutBtn: document.querySelector('#logout'),
 };
 
 export const renderAuthSection = () => {
