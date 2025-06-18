@@ -1,10 +1,12 @@
 import { elements, renderPosts, toggleTabActive } from './dom.js';
 import { getAllPosts } from './api.js';
-import { TAB_STATE } from './config.js';
 
 export const posts = {
-  // 서버에서 posts 데이터 가져오는 함수
-  async loadPostsFromServer(category = TAB_STATE.currentTab) {
+  /**
+   * // 서버에서 posts 데이터 가져오는 함수
+   * @param {string} category 게시판의 tab FREE | RECRUIT
+   */
+  async loadPostsFromServer(category) {
     try {
       // 서버에서 데이터 가져오기
       const posts = await getAllPosts(category);
@@ -19,7 +21,9 @@ export const posts = {
       }
     }
   },
-  // post 이벤트 바인딩 함수
+  /**
+   *  post 이벤트 바인딩 함수
+   */
   bindPostsEvent() {
     // 자유 게시판 버튼 클릭
     elements.freeBtn.addEventListener('click', () => {

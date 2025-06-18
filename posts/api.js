@@ -1,11 +1,10 @@
-import { API_CONFIG, TAB_STATE } from './config.js';
+import { API_CONFIG } from './config.js';
 
 /**
  * json-server에서 posts 데이터 가져오는 함수
  * @param { string } 현재 텝에 설정된 tag 종류 FREE / RECRUIT
  * @returns {Promise<Array>}
  */
-// 기본값 free tab
 export const getAllPosts = async (category) => {
   try {
     // 엔드 포인트 설정
