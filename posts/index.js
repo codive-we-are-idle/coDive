@@ -1,5 +1,6 @@
 import { elements, renderPosts, toggleTabActive } from './dom.js';
 import { getAllPosts } from './api.js';
+import { postsHandlers } from './handler.js';
 
 export const posts = {
   /**
@@ -26,17 +27,9 @@ export const posts = {
    */
   bindPostsEvent() {
     // 자유 게시판 버튼 클릭
-    elements.freeBtn.addEventListener('click', () => {
-      elements.freeBtn.classList.add('is-active');
-
-      this.loadPostsFromServer('FREE');
-    });
+    elements.freeBtn.addEventListener('click', postsHandlers.handleClickFreeTab(this.loadPostsFromServer));
     // 구인 게시판 클릭
-    elements.recruitBtn.addEventListener('click', () => {
-      console.log(elements.recruitBtn);
-      elements.freeBtn.classList.add('is-active');
-      this.loadPostsFromServer('RECRUIT');
-    });
+    elements.recruitBtn.addEventListener('click', postsHandlers.handleClickRecruitTab(this.loadPostsFromServer));
   },
   init() {
     this.bindPostsEvent();
