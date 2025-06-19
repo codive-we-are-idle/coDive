@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "코딩 질문입니다.",
+      "createAt": "25.06.12",
+      "category": "1"
+    },
+    {
+      "id": 2,
+      "title": "(모집) 풀스택 스터디원 구인합니다. ",
+      "createAt": "25.06.13",
+      "category": "2"
+    },
+    {
+      "id": 3,
+      "title": "(홍보) 알고리즘 스터디 홍보합니다. ",
+      "createAt": "25.06.14",
+      "category": "2"
+    },
+    {
+      "id": 4,
+      "title": "비트코인의 미래... 더보기",
+      "createAt": "25.06.15",
+      "category": "1"
+    },
+    {
+      "id": 5,
+      "title": "(광고) 첫구매 이벤트 100원",
+      "createAt": "25.06.16",
+      "category": "1"
+    },
+    {
+      "id": 6,
+      "title": "첫번째 게시물",
+      "createAt": "25.06.17",
+      "category": "1"
+    }
+  ],
+    "userInfo": [
+    { "id": 1, "name": "하나", "teamName": "1팀", "score": 15 },
+    { "id": 2, "name": "둘", "teamName": "2팀", "score": 12 },
+    { "id": 3, "name": "셋", "teamName": "3팀", "score": 18 },
+    { "id": 4, "name": "넷", "teamName": "1팀", "score": 8 },
+    { "id": 5, "name": "다섯", "teamName": "2팀", "score": 22 },
+    { "id": 6, "name": "여섯", "teamName": "3팀", "score": 11 },
+    { "id": 7, "name": "일곱", "teamName": "4팀", "score": 9 },
+    { "id": 8, "name": "여덟", "teamName": "5팀", "score": 14 }
+  ]
+}

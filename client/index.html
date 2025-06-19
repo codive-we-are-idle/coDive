@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoDive 코딩 협동 플랫폼</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js" type="module"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="./assets/logo_green.png" alt="">
+                </div>
+                <span class="logo-text">CoDive</span>
+            </div>
+
+            <nav class="nav">
+                <a href="#" class="nav-link">CONTEST</a>
+                <a href="#" class="nav-link">GROUP</a>
+                <a href="#" class="nav-link">COMMUNITY</a>
+            </nav>
+
+            <div class="auth-buttons">
+                <button class="btn-login">LOGIN</button>
+                <button class="btn-join">JOIN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Visual Banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="https://grepp-programmers.s3.amazonaws.com/production/file_resource/8318/%E1%84%8C%E1%85%A1%E1%84%80%E1%85%A7%E1%86%A8%E1%84%8C%E1%85%B3%E1%86%BC_%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%89%E1%85%B5_%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB_%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.png" alt="25년 자격증 영상 이벤트"></div>
+                        <div class="swiper-slide"><img src="https://grepp-programmers.s3.amazonaws.com/production/file_resource/8318/%E1%84%8C%E1%85%A1%E1%84%80%E1%85%A7%E1%86%A8%E1%84%8C%E1%85%B3%E1%86%BC_%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%89%E1%85%B5_%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB_%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.png" alt="25년 자격증 영상 이벤트"></div>
+                        <div class="swiper-slide"><img src="https://grepp-programmers.s3.amazonaws.com/production/file_resource/8318/%E1%84%8C%E1%85%A1%E1%84%80%E1%85%A7%E1%86%A8%E1%84%8C%E1%85%B3%E1%86%BC_%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%89%E1%85%B5_%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB_%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.png" alt="25년 자격증 영상 이벤트"></div>
+                    </div>
+                    <!-- If we need pagination -->
+    
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rankings -->
+    <section class="rankings">
+        <div class="container">
+            <div class="rankings-main-header">
+                <div class="ranking-icon">
+                    <img src="./assets/icons/trophy.png" alt="트로피 모양">
+                    <p>랭킹 조회</p>
+                </div>
+                <span class="update-time">날짜넣는 곳</span>
+            </div>
+
+            <div class="container rankings-split">
+                <!-- Team 랭킹 -->
+                <div class="ranking-box">
+                    <div class="rankings-header">
+                        <span class="rankings-title">Team</span>
+                    </div>
+                    <div class="ranking-list active" id="team-ranking">
+                        <div class="ranking-item rank-1">
+                            <span class="rank">1</span>
+                            <span class="profile"><img src="./assets/icons/king.png" alt=""></span>
+                            <span class="name">삼다수</span>
+                            <span class="badge">🥇</span>
+                            <span class="score">▲ 10</span>
+                        </div>
+                        <div class="ranking-item">
+                            <span class="rank">2</span>
+                            <span class="profile"><img src="./assets/icons/king.png" alt=""></span>
+                            <span class="name">백산수</span>
+                            <span class="badge">🥈</span>
+                            <span class="score">▲ 10</span>
+                        </div>
+                        <div class="ranking-item">
+                            <span class="rank">3</span>
+                            <span class="profile"><img src="./assets/icons/king.png" alt=""></span>
+                            <span class="name">아리수</span>
+                            <span class="badge">🥉</span>
+                            <span class="score">▲ 10</span>
+                        </div>
+                        <div class="ranking-item">
+                            <span class="rank">4</span>
+                            <span class="profile"><img src="./assets/icons/king.png" alt=""></span>
+                            <span class="name">쿠팡수</span>
+                            <span class="score">▲ 10</span>
+                        </div>
+                        <div class="ranking-item">
+                            <span class="rank">5</span>
+                            <span class="profile"><img src="./assets/icons/king.png" alt=""></span>
+                            <span class="name">수돗물</span>
+                            <span class="score">▲ 10</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Person 랭킹 -->
+                <div class="ranking-box">
+                    <div class="rankings-header">
+                        <span class="rankings-title">Person</span>
+                    </div>
+                    <div class="ranking-list active" id="person-ranking">
+                        <div class="ranking-item rank-1">
+                            <span class="rank">1</span>
+                            <span class="profile"><img src="./assets/icons/king.png" alt=""></span>
+                            <span class="name">하나</span>
+                            <span class="badge"><img src="./assets/icons/gold.png" alt=""></span>
+                            <span class="score">▲ 10</span>
+                        </div>
+                        <div class="ranking-item">
+                            <span class="rank">2</span>
+                            <span class="profile"><img src="./assets/icons/king.png" alt=""></span>
+                            <span class="name">둘</span>
+                            <span class="badge"><img src="./assets/icons/silver.png" alt=""></span>
+                            <span class="score">▲ 10</span>
+                        </div>
+                        <div class="ranking-item">
+                            <span class="rank">3</span>
+                            <span class="profile"><img src="./assets/icons/king.png" alt=""></span>
+                            <span class="name">셋</span>
+                            <span class="badge"><img src="./assets/icons/bronze.png" alt=""></span>
+                            <span class="score">▲ 10</span>
+                        </div>
+                        <div class="ranking-item">
+                            <span class="rank">4</span>
+                            <span class="profile"><img src="./assets/icons/king.png" alt=""></span>
+                            <span class="name">넷</span>
+                            <span class="score">▲ 10</span>
+                        </div>
+                        <div class="ranking-item">
+                            <span class="rank">5</span>
+                            <span class="profile"><img src="./assets/icons/king.png" alt=""></span>
+                            <span class="name">다섯</span>
+                            <span class="score">▲ 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="board">
+        <div class="container">
+           <div class="board-tabs">
+    <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="free">자유게시판</button>
+        <button class="tab-btn" data-tab="study">스터디게시판</button>
+    </div>
+    
+    <div class="tab-contents">
+        <div class="tab-content active" id="free">
+            <!-- 자유게시판 내용 -->
+            <div class="board-list">
+                <!-- 자유게시판 게시글 목록 -->
+            </div>
+        </div>
+        
+        <div class="tab-content" id="study">
+            <!-- 스터디게시판 내용 -->
+            <div class="board-list">
+                <!-- 스터디게시판 게시글 목록 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>CoDive는 함께하는 성장을 응원합니다.</p>
+            <p class="copyright">©2025 We are idle</p>
+        </div>
+    </footer>
+</body>
+
+</html>
