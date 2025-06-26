@@ -1,0 +1,106 @@
+.communitySection {
+  padding: 32px;
+  margin-bottom: 80px;
+  background-color: var(--bg);
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+}
+
+.buttonBox {
+  display: flex;
+  gap: 12px;
+  padding-inline: 0;
+  margin-bottom: 24px;
+  justify-content: flex-start;
+}
+
+.buttonBox button {
+  border: 1.5px solid var(--border);
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.buttonBox button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--border-primary);
+}
+
+.buttonBox button:hover {
+  background-color: var(--border-primary);
+  color: white;
+  border-color: var(--border-primary);
+}
+
+.buttonBox .is-button-active {
+  background-color: var(--border-primary);
+  color: white;
+  border-color: var(--border-primary);
+}
+
+.communityContentsBox {
+  border: none;
+  border-radius: 16px;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.communityContents {
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.communityContents:hover {
+  border-color: var(--border-primary);
+  background-color: #fafafa;
+}
+
+.postTag {
+  font-size: 13px;
+  color: var(--text-90);
+  padding: 4px 10px;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.postTitle {
+  font-size: 15px;
+  font-weight: 600;
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--text);
+  transition: color 0.2s ease-in-out;
+}
+
+.postTitle:hover {
+  color: var(--border-primary);
+}
+
+.createdDate {
+  font-size: 13px;
+  color: var(--text-90);
+  flex-shrink: 0;
+}

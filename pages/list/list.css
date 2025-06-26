@@ -1,0 +1,144 @@
+body {
+  /* 페이지 전체  */
+  margin: 0 auto;
+  /* 세로로 긴 페이지이므로 위아래 마진은 0을 주고 가로는 auto로 하여 페이지 정중앙에 오도록 한다 */
+  width: 1500px;
+  height: 1000px;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  /* 가로 정렬 */
+  justify-content: space-between;
+  /* 좌우 끝으로 정렬 */
+  align-items: center;
+  /* 세로 중앙 정렬 */
+  padding: 1rem 2rem;
+  /* 세로 여백, 가로 여백 */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav a.active {
+  color: 9B0E17;
+}
+
+.auth {
+  font-size: 0.9rem;
+}
+
+.auth a {
+  margin-left: 0.5rem;
+  color: #000;
+}
+
+.hero {
+  text-align: center;
+  margin: 33px 0;
+  font-weight: bold;
+}
+
+.container {
+  width: 1020px;
+  height: 900px;
+  border: 2px solid #9b0e17;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 1rem;
+  /* padding-bottom: 100px; */
+}
+
+.button-group {
+  margin-bottom: 60px;
+
+  margin-right: 0.5rem;
+
+  cursor: pointer;
+
+  button {
+    padding: 0.5rem 1rem;
+    width: 119px;
+    height: 36px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+    background: #f2f2f2;
+    color: #9b0e17;
+    border: 1px solid #c4c4c4;
+  }
+  .button-active {
+    background: #9b0e17;
+    color: white;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 1150px;
+  overflow-y: auto;
+  align-items: center;
+}
+
+.post-item {
+  width: 980px;
+
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+}
+
+.badge {
+  background-color: #d29397;
+
+  padding-block: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+
+  margin-right: 30px;
+  width: 94px;
+  text-align: center;
+}
+
+.post-title {
+  width: 794px;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 46px;
+}
+
+.pagination span {
+  background: #9b0e17;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #777;
+  font-size: 0.85rem;
+}

@@ -1,13 +1,21 @@
 {
-  "dependencies": {
-    "json-server": "^1.0.0-beta.3"
-  },
+  "name": "co-dive",
+  "type": "module",
   "scripts": {
     "api": "json-server --watch db.json --port 3001",
-    "dev": "live-server --port=8080 --no-browser",
-    "start": "npm run api & npm run dev"
+    "dev": "live-server --port=8080 --no-browser --host=localhost --entry-file=index.html",
+    "start": "npm run api & npm run dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "prettier": "^3.6.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0"
   }
 }

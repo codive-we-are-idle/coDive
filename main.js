@@ -1,12 +1,14 @@
-import { auth } from './auth/index.js';
+import { setupRouter, renderPage } from './router.js';
 import { setBoardDataList, setRankData } from './lib/dom/data.js';
 import { setDate } from './lib/dom/render.js';
 import { bindingEvent } from './lib/event/listener.js';
-import {} from './lib/swiper.js';
+import { setUiInteraction } from './lib/utils/uiController.js';
 
 function init() {
   // 이벤트 바인딩
   bindingEvent();
+
+  setUiInteraction();
 
   // 게시판
   setBoardDataList('freeBoard');
@@ -15,9 +17,12 @@ function init() {
   setRankData('team');
   setRankData('personal');
   setDate();
-
-  // 로그인
-  auth.init();
 }
+// 라우터 초기화
+setupRouter();
+
+// 초기 페이지 렌더링
+renderPage(window.location.pathname || '/');
+document.getElementById('app').style.opacity = 1;
 
 document.addEventListener('DOMContentLoaded', init);

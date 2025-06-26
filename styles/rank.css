@@ -1,0 +1,150 @@
+.rankingSection {
+  padding: 24px;
+  margin-bottom: 40px;
+  background-color: var(--bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.rankingHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.rankingHeader span {
+  padding-block: 8px;
+  font-size: 16px;
+  color: var(--text-90);
+}
+
+.rankingHeader .label {
+  margin-left: 10px;
+  flex-grow: 1;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.rankingHeader .updatedDate {
+  font-size: 14px;
+  color: var(--text-90);
+}
+
+.rankingContentsBox {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.rankingContents {
+  flex: 1;
+}
+
+.rankingContents h3 {
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  padding: 10px;
+}
+
+.rankingItems,
+.isFirst {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 64px;
+  border-radius: 16px;
+  padding: 12px 20px;
+  gap: 16px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+.rankingItems {
+  border: 1.5px solid var(--border);
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.isFirst {
+  border: 2px solid var(--border-primary);
+  background-color: var(--border-primary);
+}
+
+.isFirst p {
+  color: white;
+}
+
+.isFirst span {
+  color: #ffe07a;
+  font-weight: bold;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.userImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ranking {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.nickname {
+  font-size: 16px;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.rank-score {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.medalImg {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.rankingRise {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--border-primary);
+  font-weight: 600;
+}
+
+.upAndDownImg {
+  width: 16px;
+  height: 16px;
+}
+
+.riseNumber {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}

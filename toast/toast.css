@@ -1,0 +1,45 @@
+:root {
+  --bg: #fff;
+  --text: #2a2a2a;
+  --text-primary: #9b0e17;
+  --border: #c8c8c8;
+}
+
+.toast {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  top: 20px;
+  left: 50%;
+  translate: -50% 0;
+  align-items: center;
+  background-color: var(--text-primary);
+  z-index: 99;
+
+  .icon {
+    font-size: 24px;
+  }
+
+  .message {
+    color: var(--fff);
+  }
+}
+
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}
